@@ -1,0 +1,46 @@
+.contacts
+  padding-top: 79px
+  padding-bottom: 80px
+  &-map
+    margin-top: 31px
+    width: 97%
+    height: 406px
+  &-block
+    margin-top: 31px
+    color: $text-color-imp
+    font-family: "Proxima Nova - Semibold"
+    font-size: 18px
+    font-weight: 400
+    line-height: 22px
+    &__adress, &__tel
+      span
+        margin-top: 13px
+        margin-bottom: 33px
+        display: block
+        font-size: 16px
+        &.adress
+          &::before
+            content: url(../img/contacts/map-marker-icon.png)
+            display: inline-block
+            width: 29px
+            height: 29px
+            border-radius: 50%
+            background: $active-color
+            padding: 5px 9px
+            margin-right: 10px
+        &.tel
+          &::before
+            content: url(../img/contacts/contacts-phone-icon.png)
+            display: inline-block
+            width: 29px
+            height: 29px
+            border-radius: 50%
+            background: $active-color
+            padding: 5px 9px
+            margin-right: 10px
+    &__text
+      margin-bottom: 16px
+    &__btn
+      padding: 15px 30px
+      font-size: 14px
+      line-height: 22px

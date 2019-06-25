@@ -1,0 +1,38 @@
+.question
+  padding-top: 79px
+  padding-bottom: 80px
+  background: $active-color
+  position: relative
+  z-index: 0
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: url("../img/question/question-bg.png") center no-repeat
+    background-size: cover
+    opacity: 0.75
+    z-index: -1
+  .section-title
+    color: $text-color-light
+    &::after
+      background: $text-color-light
+  &-form
+    margin-top: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &__text
+      margin-bottom: 28px
+      color: $text-color-light
+      font-size: 18px
+      font-weight: 300
+      line-height: 28px
+    &__btn
+      padding: 15px 38px
+      font-size: 15px
+      line-height: 25px

@@ -1,0 +1,72 @@
+button
+  background-color: $button-color
+  color: $text-color-imp
+  font-weight: 700
+  border-radius: 100px
+  border: none
+  &:hover
+    cursor: pointer
+    background-color: darken($button-color, 15%)
+
+
+.input
+  width: 301px
+  padding-top: 13px
+  padding-bottom: 13px
+  padding-left: 52px
+  border-radius: 100px
+  border: none
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  color: #606060
+  position: relative
+  &:invalid
+    box-shadow: none
+  &-name
+    margin-bottom: 15px
+    background: #fff url('../img/user-icon.png') center left 20px no-repeat
+  &-tel
+    margin-bottom: 26px
+    background: #fff url('../img/phone-icon.png') center left 21px no-repeat
+
+
+
+
+.section-title
+  font-family: "Proxima Nova - Semibold"
+  font-size: 26px
+  font-weight: 400
+  line-height: 24px
+  text-transform: uppercase
+  text-align: center
+  color: $text-color-imp
+  &::after
+    content: ''
+    display: block
+    margin: 20px auto 0 auto
+    width: 48px
+    height: 1px
+    background: $active-color
+
+
+.feedback-arrow
+  position: absolute
+  top: 15%
+  z-index: 1
+  width: 18px
+  height: 40px
+  border: none
+  &:hover
+    cursor: pointer
+  &__right
+    right: 36%
+    background: url(../img/feedback/arrow-right.png) center no-repeat
+  &__left
+    left: 36%
+    background: url(../img/feedback/arrow-left.png) center no-repeat
+
+
+
+
+

@@ -1,0 +1,40 @@
+.offer
+  padding-top: 80px
+  padding-bottom: 80px
+  background: $active-color
+  position: relative
+  z-index: 0
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: url("../img/offer/offer-bg.png") center no-repeat
+    background-size: cover
+    opacity: 0.75
+    z-index: -1
+  &-content
+    display: flex
+    flex-direction: row
+    justify-content: center
+    .offer-text
+      margin-right: 52px
+      color: $text-color-light
+      &__title
+        margin-bottom: 8px
+        font-family: "Proxima Nova - Semibold"
+        font-size: 26px
+        font-weight: 400
+        line-height: 24px
+        text-transform: uppercase
+      &__subtitle
+        font-size: 18px
+        font-weight: 300
+        line-height: 28px
+    .offer-btn
+      padding: 15px 35px
+      font-size: 15px
+      line-height: 25px
